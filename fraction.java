@@ -1,5 +1,4 @@
 public class fraction {
-    // Свойства класса
     private int numerator;
     private int denominator;
 
