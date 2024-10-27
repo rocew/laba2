@@ -56,11 +56,11 @@ public class Main {
             System.out.println("Линия " + (i + 1) + ": " + lines[i]);
         }
         if (lines.length > 0) {
-            lines[0].getStart().setX(2);
-            lines[0].getStart().setY(4);
+            lines[0].getStart().setX(4);
+            lines[0].getStart().setY(6);
         }
         if (lines.length > 1) {
-            lines[1].getEnd().setX(30);
+            lines[1].getEnd().setX(52);
         }
         System.out.println("\nПосле изменений:");
         for (int i = 0; i < lines.length; i++) {
@@ -132,6 +132,13 @@ public class Main {
         cityF.addConnection(cityC, 4);
         cityF.addConnection(cityD, 8);
 
+        City.Connection[] connectionsForCityG = {
+                new City.Connection(cityA, 1),
+                new City.Connection(cityB, 2),
+                new City.Connection(cityC, 3)
+        };
+        City cityG = new City("G", connectionsForCityG);
+
         System.out.println("\nГорода и пути:");
         System.out.println(cityA);
         System.out.println(cityB);
@@ -139,6 +146,7 @@ public class Main {
         System.out.println(cityD);
         System.out.println(cityE);
         System.out.println(cityF);
+        System.out.println(cityG);
 
         //5.5
         System.out.println("\nВведите числитель и знаменатель для первой дроби:");
