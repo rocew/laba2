@@ -1,5 +1,4 @@
 public class line {
-    // Свойства класса
     private point start;
     private point end;
     public line(point start, point end) {
